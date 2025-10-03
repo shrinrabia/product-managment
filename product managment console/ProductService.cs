@@ -1,22 +1,29 @@
-﻿using System;
+﻿
 
 namespace product_managment_console
 {
     public class ProductService
     {
-        public void AddProducts(int Id, string Name) 
+        public List<Product> Products = new List<Product>();
+
+        public void AddProduct(Product myProduct) 
         {
-            Console.WriteLine($"Product added: {Id}, {Name}");
+            myProduct.Id = Guid.NewGuid();
+            Products.Add(myProduct);
         }
 
-        public string GetProduct(int Id)
+        public void Printroducts()
         {
-            return "Product 1";
-
+            foreach (var product in Products)
+            {
+                Console.WriteLine($"Product: {product.Id}, {product.Name}, {product.Price}");
+            }
         }
+
         public void deleteProduct(int Id)
         {
             Console.WriteLine("product deleted");   
-        }
+        }  
     }
+
 }

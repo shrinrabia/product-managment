@@ -1,16 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using product_managment_console;
 
+ProductService productservice1 = new ProductService();
+Product product1 = new Product();
 
-product_managment_console.ProductService productservice1 = new product_managment_console.ProductService();
+Console.Write("Enter Product Name: ");
+product1.Name = Console.ReadLine();
 
-productservice1.AddProducts(1, "prod1");
+Console.Write("Enter Product Price: ");
+product1.Price = int.Parse(Console.ReadLine());
 
-string productName;
+productservice1.AddProduct(product1);
 
-
-productName = productservice1.GetProduct(1);
-Console.WriteLine(productName);
-
-productservice1.deleteProduct(1);
+productservice1.Printroducts();
 
 
