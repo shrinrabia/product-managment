@@ -20,13 +20,6 @@ namespace product_managment_console
             string json = JsonSerializer.Serialize(Products);
             File.WriteAllText("products.json", json);
         }
-
-        public void LoadProducts2()
-        {
-                string json = File.ReadAllText("products.json");
-                Products = JsonSerializer.Deserialize<List<Product>>(json);
-        }
-
         public void LoadProducts()
         {
             try { 
