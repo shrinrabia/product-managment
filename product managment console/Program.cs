@@ -1,6 +1,9 @@
 ﻿using product_managment_console;
 
 ProductService productservice1 = new ProductService();
+
+productservice1.LoadProducts();
+
 Product product1 = new Product();
 
 Console.Write("Enter Product Name: ");
