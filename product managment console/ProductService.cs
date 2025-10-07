@@ -1,7 +1,4 @@
-﻿
-
-using System.Drawing;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 namespace product_managment_console
 {
@@ -31,7 +28,6 @@ namespace product_managment_console
                 Products = new List<Product>();
             }
         }
-
         public void Printroducts()
         {
             foreach (var product in Products)
@@ -39,11 +35,6 @@ namespace product_managment_console
                 Console.WriteLine($"Product: {product.Id}, {product.Name}, {product.Price}");
             }
         }
-
-        public void deleteProduct(int Id)
-        {
-            Console.WriteLine("product deleted");   
-        }  
     }
 
 }

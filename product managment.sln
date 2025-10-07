@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36511.14 d17.14
+VisualStudioVersion = 17.14.36511.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "product managment console", "product managment console\product managment console.csproj", "{2C1F3BC2-758E-4671-9FE5-77275E9DA335}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "product managment tests", "product managment tests\product managment tests.csproj", "{C7578483-C8DC-4DDA-82DA-BA0852FAE216}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{2C1F3BC2-758E-4671-9FE5-77275E9DA335}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C1F3BC2-758E-4671-9FE5-77275E9DA335}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C1F3BC2-758E-4671-9FE5-77275E9DA335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7578483-C8DC-4DDA-82DA-BA0852FAE216}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7578483-C8DC-4DDA-82DA-BA0852FAE216}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7578483-C8DC-4DDA-82DA-BA0852FAE216}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7578483-C8DC-4DDA-82DA-BA0852FAE216}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
