@@ -28,7 +28,7 @@ namespace product_managment_console
                 Products = new List<Product>();
             }
         }
-        public void Printroducts()
+        public void PrintProducts()
         {
             foreach (var product in Products)
             {

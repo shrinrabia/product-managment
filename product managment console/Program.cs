@@ -14,6 +14,6 @@ product1.Price = int.Parse(Console.ReadLine());
 
 productservice1.AddProduct(product1);
 
-productservice1.Printroducts();
+productservice1.PrintProducts();
 
 
